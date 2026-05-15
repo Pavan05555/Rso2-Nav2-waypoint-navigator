@@ -1,0 +1,16 @@
+/**:
+  ros__parameters:
+    # Waypoints as a flat list of [x1, y1, x2, y2, ...] pairs.
+    # These positions must be in FREE space on your map.
+    # Adjust to suit your specific map and mission.
+    waypoints: [1.0, 0.5, -1.0, 0.5, 0.0, 0.0]
+
+    # FIX: Initial robot pose in the map frame.
+    # Changed from (0.0, 0.0) to the TurtleBot3 Gazebo default spawn
+    # position (-2.0, -0.5), which is a known free cell on the default map.
+    # If your robot spawns elsewhere, update these values to match.
+    initial_pose_x: -2.0
+    initial_pose_y: -0.5
+
+    # Maximum number of retry attempts per waypoint before aborting.
+    max_retries: 3
